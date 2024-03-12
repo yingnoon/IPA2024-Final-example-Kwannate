@@ -68,10 +68,17 @@ while True:
         # For example location should be "San Jose" if the message is "/chotipat San Jose".
         location = "<!!!REPLACEME!!!>" 
      
-# 5. Provide your MapQuest API consumer key.
-        # MapQuest API GET parameters:
-        # - "location" is the the location to lookup
-        # - "key" is the Consumer Key you generated at https://developer.mapquest.com/user/me/apps
+# 5. Prepare openweather Geocoding APIGetParameters..
+        # Openweather Geocoding API GET parameters:
+        # - "q" is the the location to lookup
+        # - "limit" is always 1
+        # - "key" is the openweather API key, https://home.openweathermap.org/api_keys
+        openweatherGeoAPIGetParameters = {
+            "q": location,
+            "limit": 1,
+            "appid": "<!!!REPLACEME with your Openweather API Key!!!>",
+        }
+
         mapsAPIGetParameters = { 
                                 "location": location, 
                                 "key": "<!!!REPLACEME with your MapQuest API Key!!!>" 
