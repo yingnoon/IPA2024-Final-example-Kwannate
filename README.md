@@ -30,7 +30,8 @@
 5. Provide your openweather Geocoding APIGetParameters.
 6. Provide the URL to the openweather Geocoding address API.
 7. Provide the openweather Geocoding key values for latitude and longitude.
-8. Prepare openweatherAPIGetParameters for OpenWeather API; current weather data for one location by geographic coordinates.9. Provide the URL to the OpenWeather API; current weather data for one location.
+8. Prepare openweatherAPIGetParameters for OpenWeather API; current weather data for one location by geographic coordinates
+9. Provide the URL to the OpenWeather API; current weather data for one location.
 10. Complete the code to get weather description and weather temperature.
 11. Complete the code to format the response message.
 12. Complete the code to post the message to the Webex Teams room.
