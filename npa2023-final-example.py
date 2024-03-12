@@ -79,21 +79,17 @@ while True:
             "appid": "<!!!REPLACEME with your Openweather API Key!!!>",
         }
 
-        mapsAPIGetParameters = { 
-                                "location": location, 
-                                "key": "<!!!REPLACEME with your MapQuest API Key!!!>" 
-                               }
         
 # 6. Provide the URL to the MapQuest address API.
         # Get location information using the MapQuest API geocode service using the HTTP GET method
         r = requests.get("<!!!REPLACEME with URL!!!>", 
-                             params = mapsAPIGetParameters
+                             params = openweatherGeoAPIGetParameters
                         )
         # Verify if the returned JSON data from the MapQuest API service are OK
         json_data = r.json()
         # check if the status key in the returned JSON data is "0"
-        if not json_data["info"]["statuscode"] == 0:
-            raise Exception("Incorrect reply from MapQuest API. Status code: {}".format(r.statuscode))
+        if not r.status_code == 200:
+            raise Exception("Incorrect reply from OpenWeather Geocoding API. Status code: {}".format(r.statuscode))
 
 # 7. Provide the MapQuest key values for latitude and longitude.
         # Set the lat and lng key as retuned by the MapQuest API in variables
