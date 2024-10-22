@@ -1,8 +1,8 @@
 # NPA2023 Final Example
 
-- Name/Surname:
-- Student ID:
-- GitHub repository URL:
+- Name/Surname: Kwannate Theethuan
+- Student ID:65070027
+- GitHub repository URL: https://github.com/yingnoon/IPA2024-Final-example-Kwannate.git
 
 ## Instruction
 
